@@ -18,7 +18,7 @@ def sort_list_declarative(numbers):
     return sorted_numbers
 
 
-# Пример использования:
+#  Пример использования:
 numbers = [5, 2, 9, 3, 8]
 sorted_numbers = sort_list_declarative(numbers)
 print(sorted_numbers)
