@@ -16,17 +16,20 @@ def binary_search(arr, target):
         mid = (low + high) // 2
 
         if arr[mid] == target:
-            return mid  # Нашли элемент, возвращаем индекс
+            return mid
         elif arr[mid] < target:
-            low = mid + 1  # Искомый элемент находится в правой половине
+            low = mid + 1
         else:
-            high = mid - 1  # Искомый элемент находится в левой половине
+            high = mid - 1
 
-    return -1  # Элемент не найден
+    return -1
+
+# Запрос на количество элементов в массиве
+array_length = int(input("Введите количество элементов в массиве: "))
+sorted_array = [int(input(f"Элемент {i + 1}: ")) for i in range(array_length)]
 
 # Пример использования:
-sorted_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-target_element = 5
+target_element = int(input("Введите элемент для поиска: "))
 
 result = binary_search(sorted_array, target_element)
 if result != -1:
